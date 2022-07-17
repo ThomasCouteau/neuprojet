@@ -57,7 +57,7 @@ const linksList = [
     link: "/#/form",
   },
   {
-    title: "Ma Page",
+    title: "Mes réalisations",
     icon: "article",
     link: "/#/myPage",
   },

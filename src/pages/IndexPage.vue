@@ -1,16 +1,16 @@
 <template>
   <q-page class="flex flex-center">
-    <input
+    <!-- <input
       type="text"
       v-model="search"
       style="width: 40vh; height: 5vh; margin: auto; margin-top: 3vh"
-    />
+    /> -->
     <div class="row">
       <div
         style="margin: auto"
         class="wrap"
         :key="index"
-        v-for="(breakingBadInfo, index) in filteredInfo"
+        v-for="(breakingBadInfo, index) in breakingBad"
       >
         <q-card
           class="my-card"
@@ -37,39 +37,39 @@ import axios from "axios";
 
 export default defineComponent({
   name: "IndexPage",
-  props: ["breakingBadInfo"],
+  // props: ["breakingBadInfo"],
   data() {
     return {
-      search: "",
+      // search: "",
       breakingBad: null,
     };
   },
-  // mounted() {
-  //   axios
-  //     .get("https://www.breakingbadapi.com/api/characters")
-  //     .then((reponse) => {
-  //       this.breakingBad = reponse.data;
-  //       console.log(this.breakingBad);
-  //     });
+  mounted() {
+    axios
+      .get("https://www.breakingbadapi.com/api/characters")
+      .then((reponse) => {
+        this.breakingBad = reponse.data;
+        console.log(this.breakingBad);
+      });
+  },
+  // async mounted() {
+  //   try {
+  //     let reponse = await axios.get(
+  //       "https://www.breakingbadapi.com/api/characters"
+  //     );
+  //     this.breakingBad = reponse.data;
+  //     console.log(this.breakingBad);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
   // },
-  async mounted() {
-    try {
-      let reponse = await axios.get(
-        "https://www.breakingbadapi.com/api/characters"
-      );
-      this.breakingBad = reponse.data;
-      console.log(this.breakingBad);
-    } catch (err) {
-      console.log(err);
-    }
-  },
-  computed: {
-    filteredInfo() {
-      return this.breakingBad.filter((breakingBadInfo) =>
-        breakingBadInfo.toLowerCase().includes(this.search.toLowerCase())
-      );
-      // setTimeout(this.filteredInfo, 1000);
-    },
-  },
+  // computed: {
+  //   filteredInfo() {
+  //     return this.breakingBad.filter((breakingBadInfo) =>
+  //       breakingBadInfo.toLowerCase().includes(this.search.toLowerCase())
+  //     );
+  //     // setTimeout(this.filteredInfo, 1000);
+  //   },
+  // },
 });
 </script>

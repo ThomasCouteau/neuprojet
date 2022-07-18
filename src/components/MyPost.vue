@@ -1,5 +1,5 @@
 <template>
-  <article>{{ techno.name }}</article>
+  <article style="padding: auto">{{ techno.name }}</article>
 </template>
 
 <script>

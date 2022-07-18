@@ -22,7 +22,7 @@
         type="text"
         placeholder="Rechercher une techno..."
         v-model="search"
-        style="width: 40vh; height: 5vh; margin-bottom: 3vh; margin-top: 2vh"
+        style="width: 70%; height: 5vh; margin-bottom: 3vh; margin-top: 2vh"
       />
       <div v-for="techno in filteredTechno" :key="techno.id">
         <MyPost :techno="techno"></MyPost>

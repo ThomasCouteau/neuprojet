@@ -30,13 +30,7 @@
         />
       </div>
     </div>
-    <q-input
-      style="margin-top: 5vh"
-      rounded
-      outlined
-      v-model="text"
-      label="Aa"
-    />
+    <q-input style="margin-top: 5vh" rounded outlined label="Aa" />
   </q-card>
 </template>
 

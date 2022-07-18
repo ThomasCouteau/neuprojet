@@ -59,7 +59,7 @@ const linksList = [
   {
     title: "Mes réalisations",
     icon: "article",
-    link: "/#/myPage",
+    link: "/#/mes-realisations",
   },
 ];
 

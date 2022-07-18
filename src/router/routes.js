@@ -13,7 +13,7 @@ const routes = [
         component: () => import('pages/FormPage.vue')
       },
       {
-        path: 'myPage',
+        path: 'mes-realisations',
         component: () => import('pages/MyPage.vue')
       }
     ]

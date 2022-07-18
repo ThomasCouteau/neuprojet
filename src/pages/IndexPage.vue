@@ -37,10 +37,8 @@ import axios from "axios";
 
 export default defineComponent({
   name: "IndexPage",
-  // props: ["breakingBadInfo"],
   data() {
     return {
-      // search: "",
       breakingBad: null,
     };
   },
@@ -52,24 +50,5 @@ export default defineComponent({
         console.log(this.breakingBad);
       });
   },
-  // async mounted() {
-  //   try {
-  //     let reponse = await axios.get(
-  //       "https://www.breakingbadapi.com/api/characters"
-  //     );
-  //     this.breakingBad = reponse.data;
-  //     console.log(this.breakingBad);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // },
-  // computed: {
-  //   filteredInfo() {
-  //     return this.breakingBad.filter((breakingBadInfo) =>
-  //       breakingBadInfo.toLowerCase().includes(this.search.toLowerCase())
-  //     );
-  //     // setTimeout(this.filteredInfo, 1000);
-  //   },
-  // },
 });
 </script>

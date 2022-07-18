@@ -12,7 +12,7 @@
     "
   >
     <q-card-section class="bg-teal text-white">
-      <div class="text-h6">Chat <q-icon name="mark_chat_unread" /></div>
+      <div class="text-h6">Chat Factice<q-icon name="mark_chat_unread" /></div>
       <div class="text-subtitle2">Thomas Couteau</div>
     </q-card-section>
     <div class="q-pa-md row justify-center">

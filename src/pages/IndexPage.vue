@@ -1,10 +1,5 @@
 <template>
   <q-page class="flex flex-center">
-    <!-- <input
-      type="text"
-      v-model="search"
-      style="width: 40vh; height: 5vh; margin: auto; margin-top: 3vh"
-    /> -->
     <div class="row">
       <div
         style="margin: auto"
